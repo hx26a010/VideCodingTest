@@ -1,0 +1,6 @@
+{
+  "name": "将棋",
+  "description": "洗練されたデザインの将棋ゲーム。対局、持ち駒、成、ローカル2人対戦、AI対戦機能を搭載しています。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
