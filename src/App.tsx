@@ -522,7 +522,7 @@ export default function App() {
               }`}
             >
               <Cpu className="w-3.5 h-3.5" />
-              AI対局
+              CPU対局
             </button>
             <button
               onClick={() => {
@@ -607,7 +607,7 @@ export default function App() {
                 <div className="absolute inset-0 z-30 bg-slate-950/20 backdrop-blur-md flex items-center justify-center rounded-2xl">
                   <div className="bg-white/10 backdrop-blur-lg text-white font-serif px-6 py-3.5 rounded-2xl shadow-2xl text-center flex items-center gap-3 border border-white/10 animate-pulse">
                     <Zap className="w-4 h-4 animate-spin text-blue-400" />
-                    <span className="font-sans font-bold text-sm tracking-wide">AIが思考しています...</span>
+                    <span className="font-sans font-bold text-sm tracking-wide">CPUが思考しています...</span>
                   </div>
                 </div>
               )}
@@ -645,7 +645,7 @@ export default function App() {
                 <span>対局情報 (Dashboard)</span>
                 {vsAI && (
                   <span className="text-[10px] bg-blue-500/10 border border-blue-500/20 text-blue-300 font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
-                    AI 対戦モード
+                    CPU 対戦モード
                   </span>
                 )}
               </h2>
@@ -679,7 +679,7 @@ export default function App() {
                     後手 (Gote)
                   </div>
                   <div className="font-serif text-sm font-bold mt-1 flex items-center justify-between">
-                    <span>△ {vsAI ? `AI（${aiDifficulty === 'EASY' ? '初級' : '中級'}）` : '対戦者'}</span>
+                    <span>△ {vsAI ? `CPU（${aiDifficulty === 'EASY' ? '初級' : '中級'}）` : '対戦者'}</span>
                     {turn === Player.GOTE && <span className="text-slate-300 block text-xs animate-pulse">● {isAiThinking ? '思考中' : '手番'}</span>}
                   </div>
                 </div>
@@ -690,7 +690,7 @@ export default function App() {
                 <div className="p-3 bg-white/5 border border-white/5 rounded-2xl space-y-2">
                   <div className="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
                     <Zap className="w-3.5 h-3.5 text-blue-400" />
-                    <span>AI 難易度設定 (Difficulty)</span>
+                    <span>CPU 難易度設定 (Difficulty)</span>
                   </div>
                   <div className="grid grid-cols-2 gap-1.5 pt-1.5">
                     <button
